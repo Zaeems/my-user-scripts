@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Invert Colors
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.2
 // @description  Inverts the colors of Google services for dark mode
 // @author       You
 // @license      MIT
@@ -9,8 +9,8 @@
 // @exclude      https://drive.google.com/file/*
 // @grant        none
 // @run-at       document-start
-// @downloadURL https://update.greasyfork.org/scripts/539611/Google%20Invert%20Colors.user.js
-// @updateURL https://update.greasyfork.org/scripts/539611/Google%20Invert%20Colors.meta.js
+// @downloadURL https://github.com/Zaeems/my-user-scripts/raw/refs/heads/main/Google%20Invert%20Colours.user.js
+// @updateURL https://github.com/Zaeems/my-user-scripts/raw/refs/heads/main/Google%20Invert%20Colours.user.js
 // ==/UserScript==
 
 (function () {
@@ -25,7 +25,7 @@
     },
     {
       match: "mail.google.com/chat", // Google Chat
-      selectors: ["#loading", ".brC-brG", ".YADHBe"],
+      selectors: ["#loading", ".brC-brG", ".YADHBe", "#aso_search_form_anchor"],
     },
     {
       match: "meet.google.com", // Google Meets
